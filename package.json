@@ -1,0 +1,29 @@
+{
+  "name": "carthage3.0",
+  "version": "1.0.0",
+  "description": "Blockchain Tunisia Community building several technologies on NEAR Protocol. We educate and nurture talented individuals to become world-class blockchain developers",
+  "main": "indeaex.js",
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && nodemon index",
+    "devapp": "concurrently \"npm run frontend \"    \" npm run backend \"  "
+  },
+  "keywords": [],
+  "author": "Amira Nasri",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.3",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
