@@ -5,7 +5,7 @@
   "main": "indeaex.js",
   "scripts": {
     "frontend": "cd frontend && npm run dev",
-    "backend": "cd backend && nodemon index",
+    "backend": "cd backend && node index",
     "devapp": "concurrently \"npm run frontend \"    \" npm run backend \"  "
   },
   "keywords": [],
