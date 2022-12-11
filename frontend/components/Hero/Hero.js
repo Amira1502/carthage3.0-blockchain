@@ -13,27 +13,7 @@ import { LeftSection, RightSection } from './HeroStyles';
 
 // import css material ui design 
 import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Grid from '@mui/material/Grid';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import List from '@mui/material/List';
-import ListItemText from '@mui/material/ListItemText';
-
-
-import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
-import { useTheme } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import { Divider, FormGroup } from '@mui/material';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import StepContent from '@mui/material/StepContent';
 import { useRouter } from 'next/router'
-import Link from 'next/link';
 
 
 
@@ -73,44 +53,9 @@ const Hero = (props) => {
 
   // handleClick
   const handleClick = () => {
-    window.location.href = "https://4ddkh2giv3l.typeform.com/to/fHvubhL1";
+    window.location.href = "https://forms.gle/VkyUJuH6j7K2vHay9";
   }
 
-  const onSubmit = data => console.log(data);
-
-
-    /** Group the person input fields in a component */
-    const PersonFields = () =>(
-      <section>
-        <h3>Personal information</h3>
-        <Input name="firstName" label="First Name" handleChange={handleChange} autoFocus half />
-        <Input name="lastName" label="Last Name" handleChange={handleChange} half />
-      </section>
-    )
-  
-    /** Group the contact input fields in a component */
-    const ContactFields = () => (
-      <section>
-        <h3>Contact</h3>
-        <Input label="Email" required type="email" placeholder="exemple@exemple.com"/>
-        <Input label="Phone" required type="tel" placeholder="(00) 0.0000-0000"/>
-      </section>
-    )
-  
-    /** Group the address input fields in a component */
-    const AddressFields = () =>(
-      <section>
-        <h3>Address</h3>
-        <Input  label="Street" required type="text" placeholder="Street name, avenue, etc..."/>
-        <Input label="Number" required type="number" placeholder="000"/>
-      </section>
-    )
-    
-    const steps = [
-      <PersonFields/>,
-      <ContactFields/>,
-      <AddressFields/>
-   ];  
   //
   return (
   <div>
@@ -123,7 +68,7 @@ const Hero = (props) => {
       <SectionText>
          Notre objectif est d'éduquer les talents, les programmeurs et ceux désirant exploiter le Web 3.0 et l'écosystème NEAR pour devenir des développeurs blockchain de classe mondiale. 
       </SectionText>
-      <Button onClick={() => router.push('/Form')}>Rejoignez Nous</Button>
+      <Button onClick={handleClick}>Rejoignez Nous</Button>
     </LeftSection>
       {/* <RightSection>
       <Box
