@@ -3,7 +3,11 @@ import { DiZend } from 'react-icons/di';
 import { MdOutlineDraw, MdWorkspacesOutline } from "react-icons/md";
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './OrganisationsStyles';
+import { List, ListContainer, ListItem, ListParagraph, ListTitle, BlogCard, GridContainer,Img } from './OrganisationsStyles';
+
+import Box from '@mui/material/Box';
+
+import { organisationPict } from '../../constants/constants';
 
 const Organisation = () =>  (
   <Section id="organisation">
@@ -51,7 +55,18 @@ const Organisation = () =>  (
         </ListContainer>
       </ListItem>
     </List>
+    <GridContainer>
+      {organisationPict.map((p, i) => {
+        return (
+          <BlogCard key={i}>
+          <Img src={p.image} />
+          </BlogCard>
+        );
+      })}
+    </GridContainer>
+    <br></br>
     <SectionDivider colorAlt />
+
   </Section>
 );
 

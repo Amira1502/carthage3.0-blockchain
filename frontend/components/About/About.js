@@ -11,7 +11,6 @@ const About = () => {
       <SectionText>
       Nous sommes une équipe de personnes talentueuses qui s'efforcent d'accroître l'adoption de la technologie blockchain sur le continent. Prenez contact avec nous.
       </SectionText>
-      <SectionDivider />
     </Section>
   );
 };

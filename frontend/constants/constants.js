@@ -34,6 +34,17 @@ export const académie3 = [
     { year: 1, text: 'Nous sommes une agence entièrement à distance', },
     { year: 2, text: 'contact@carthage3.com', },
     { year: 3, text: '', },
-    // { year: 2020, text: 'Shared my projects with the world', },
-    // { year: 2021, text: 'Started my own platform', },
+  ];
+
+  export const organisationPict = [
+    { 
+      image: '/images/meet2.jpg',
+    },
+    {
+      image: '/images/meet1.jpg',
+    },
+    {
+      image: '/images/meet3.jpeg',
+
+    },
   ];

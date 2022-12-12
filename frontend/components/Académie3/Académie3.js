@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './AcadémieStyles';
 import { Section, SectionDivider, SectionTitle, SectionText } from '../../styles/GlobalComponents';
-import { académie3, projects } from '../../constants/constants';
+import { académie3 } from '../../constants/constants';
 
 const Académie3 = () => (
   <Section nopadding id="académie3">

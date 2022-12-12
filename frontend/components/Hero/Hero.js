@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import { signup, signin} from '../../redux/action/auth';
 import { AUTH } from '../../redux/actionTypes/actionTypes';
 import Input from '../Auth/Input';
-import decode from 'jwt-decode';
 
 // import styles
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
@@ -13,7 +12,6 @@ import { LeftSection, RightSection } from './HeroStyles';
 
 // import css material ui design 
 import Box from '@mui/material/Box';
-import { useRouter } from 'next/router'
 
 
 
@@ -21,7 +19,6 @@ import { useRouter } from 'next/router'
 const initialState = { firstName: '', lastName: '', email: '', telegram: '' };
 
 const Hero = (props) => {
-  const router = useRouter()
 
   const [form, setForm] = useState(initialState);
   const [isSignup, setIsSignup] = useState(false);
@@ -53,7 +50,7 @@ const Hero = (props) => {
 
   // handleClick
   const handleClick = () => {
-    window.location.href = "https://forms.gle/VkyUJuH6j7K2vHay9";
+    window.open("https://forms.gle/VkyUJuH6j7K2vHay9", "_blank");
   }
 
   //
