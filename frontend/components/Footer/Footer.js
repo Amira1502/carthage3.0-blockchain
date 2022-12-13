@@ -1,13 +1,25 @@
 import React from 'react';
+import Link from 'next/link';
+
 import { AiFillLinkedin} from 'react-icons/ai';
 import { FaFacebook, FaDiscord, FaTelegram, FaTwitter} from "react-icons/fa";
+import { DiCssdeck } from 'react-icons/di';
 import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer, Img } from './FooterStyles';
+
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
+      <LinkColumn>
+      <LinkTitle>
+      <Link href="/" style={{ display: 'flex', alignItems: 'center', color:"white" }}>
+      <DiCssdeck size="3rem" /> <span>Carthage3.0</span>
+      </Link>
+      </LinkTitle>
+          <LinkItem><Img src={'/images/built-rev.png'} /></LinkItem>
+      </LinkColumn>
         <LinkColumn>
           <LinkTitle>Tel</LinkTitle>
           <LinkItem href="https://calendly.com/nasriamira88/15min" target="_blank">Réservez votre appel avec nous</LinkItem>
