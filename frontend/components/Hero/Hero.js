@@ -8,7 +8,7 @@ import Input from '../Auth/Input';
 // import styles
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection, RightSection } from './HeroStyles';
+import { LeftSection, RightSection, Img} from './HeroStyles';
 
 // import css material ui design 
 import Box from '@mui/material/Box';
@@ -62,13 +62,14 @@ const Hero = (props) => {
         Communauté<br />
           Blockchain 
       </SectionTitle>
+      <Img src={"/images/near_logo_wht.png"} />
       <SectionText>
          Notre objectif est d'éduquer les talents, les programmeurs et ceux désirant exploiter le Web 3.0 et l'écosystème NEAR pour devenir des développeurs blockchain de classe mondiale. 
-      </SectionText>
+     </SectionText>
       <Button onClick={handleClick}>Rejoignez Nous</Button>
     </LeftSection>
-      {/* <RightSection>
-      <Box
+  {/* <RightSection>
+       <Box
           sx={{
             marginTop: 5,
             display: 'flex',
@@ -104,9 +105,8 @@ const Hero = (props) => {
           </Grid>
         </form>
        </Box> 
-      
-  </RightSection> */}
-
+       
+      </RightSection>  */}
     </Section>
     </div>
 );
